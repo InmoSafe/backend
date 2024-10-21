@@ -1,3 +1,5 @@
 
 /.vscode
 /.vs
+/.venv
+/db.sqlite3
