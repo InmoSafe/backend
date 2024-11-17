@@ -20,3 +20,56 @@ Content-Type: application/json
 
 GET http://127.0.0.1:8000/testToken 
 Content-Type: application/json Authorization: token xxx
+
+###
+
+POST http://127.0.0.1:8000/inmuebles/create/
+Content-Type: application/json
+
+{
+    "apto": 1214,
+    "unidad": "Mazzaro",
+    "ciudad": "Sabaneta",
+    "precio": 2400000,
+    "destinacion": "Arriendo",
+    "habitaciones": 2,
+    "area": 74,
+    "extras": "Parqueo",
+    "llaves": "Oficina",
+    "disponible": true
+}
+
+###
+
+POST http://127.0.0.1:8000/inmuebles/create/
+Content-Type: application/json
+
+{
+    "apto": 1618,
+    "unidad": "Living",
+    "ciudad": "Sabaneta",
+    "precio": 2800000,
+    "destinacion": "Arriendo",
+    "habitaciones": 3,
+    "area": 82,
+    "llaves": "En porteria",
+    "disponible": true
+}
+
+###
+
+PATCH http://127.0.0.1:8000/inmuebles/3/update/
+Content-Type: application/json
+
+{   
+    "precio": 2600000
+}
+
+###
+
+DELETE http://127.0.0.1:8000/inmuebles/3/delete/
+Content-Type: application/json
+
+{   
+    
+}

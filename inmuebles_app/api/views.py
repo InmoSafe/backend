@@ -1,14 +1,23 @@
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
+from rest_framework import generics
+from inmuebles_app.models import Inmueble
+from inmuebles_app.api.serializers import InmuebleSerializer
 
-@api_view(['POST'])
-def create(request):
-    return Response({"passed!"})
+class ApCreate(generics.CreateAPIView):
+    queryset = Inmueble.objects.all()
+    serializer_class = InmuebleSerializer
 
-@api_view(['POST'])
-def delete(request):
-    return Response({"passed!"})
+class ApUpdate(generics.UpdateAPIView):
+    queryset = Inmueble.objects.all()
+    serializer_class = InmuebleSerializer
 
-@api_view(['GET'])
-def list(request):
-    return Response({"passed!"})
+class ApDelete(generics.DestroyAPIView):
+    queryset = Inmueble.objects.all()
+    serializer_class = InmuebleSerializer
+
+class ApList(generics.ListAPIView):
+    queryset = Inmueble.objects.all()
+    serializer_class = InmuebleSerializer
+
+class ApDetail(generics.RetrieveAPIView):
+    queryset = Inmueble.objects.all()
+    serializer_class = InmuebleSerializer

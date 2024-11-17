@@ -1,8 +1,10 @@
-from django.urls import re_path
-from inmuebles_app.api import views
+from django.urls import path
+from inmuebles_app.api.views import ApCreate, ApUpdate, ApDelete, ApList, ApDetail
 
 urlpatterns = [
-    re_path('create', views.create),
-    re_path('delete', views.delete),
-    re_path('list', views.list),
+    path('create/', ApCreate.as_view()),
+    path('<int:pk>/update/', ApUpdate.as_view()),
+    path('<int:pk>/delete/', ApDelete.as_view()),
+    path('', ApList.as_view()),
+    path('<int:pk>/', ApDetail.as_view()),
 ]
