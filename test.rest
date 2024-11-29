@@ -23,6 +23,11 @@ Content-Type: application/json Authorization: token xxx
 
 ###
 
+GET https://backend-1qwg.onrender.com/inmuebles/ 
+Content-Type: application/json
+
+###
+
 POST http://127.0.0.1:8000/inmuebles/create/
 Content-Type: application/json
 
