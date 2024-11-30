@@ -28,37 +28,39 @@ Content-Type: application/json
 
 ###
 
-POST http://127.0.0.1:8000/inmuebles/create/
+POST https://backend-1qwg.onrender.com/inmuebles/create/
 Content-Type: application/json
 
 {
-    "apto": 1214,
-    "unidad": "Mazzaro",
+    "apto": 1005,
+    "unidad": "Kamelot",
     "ciudad": "Sabaneta",
-    "precio": 2400000,
+    "precio": 2800000,
     "destinacion": "Arriendo",
     "habitaciones": 2,
-    "area": 74,
-    "extras": "Parqueo",
-    "llaves": "Oficina",
+    "area": 76,
+    "extras": "Parqueo y cuarto útil",
+    "llaves": "EN EL CASILLERO",
     "disponible": true
 }
 
 ###
 
-POST http://127.0.0.1:8000/inmuebles/create/
+POST https://backend-1qwg.onrender.com/inmuebles/create/
 Content-Type: application/json
 
 {
-    "apto": 1618,
-    "unidad": "Living",
-    "ciudad": "Sabaneta",
-    "precio": 2800000,
-    "destinacion": "Arriendo",
-    "habitaciones": 3,
-    "area": 82,
-    "llaves": "En porteria",
-    "disponible": true
+    "apto": 2715
+,
+    "unidad": "RESERVA DEL BOSQUE",
+    "ciudad": "ITAGÜÍ",
+    "precio": 360000000,
+    "destinacion": "Venta",
+    "habitaciones": 2,
+    "area": 63,
+    "llaves": "Porteria",
+    "disponible": true,
+    "extras": "Parqueadero"
 }
 
 ###

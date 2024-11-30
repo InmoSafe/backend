@@ -6,7 +6,7 @@ class Inmueble(models.Model):
     unidad = models.CharField(max_length=100)
     torre = models.IntegerField(null=True)
     ciudad = models.CharField(max_length=100)
-    precio = models.DecimalField(max_digits=10, decimal_places=2)
+    precio = models.DecimalField(max_digits=15, decimal_places=2)
     destinacion = models.CharField(max_length=100)
     habitaciones = models.IntegerField()
     area = models.DecimalField(max_digits=10, decimal_places=2)
